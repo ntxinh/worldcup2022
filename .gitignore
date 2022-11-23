@@ -5,3 +5,5 @@
 /postgres-data
 /prod.env
 /start.sh
+.env
+yarn.lock

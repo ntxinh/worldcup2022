@@ -13,6 +13,8 @@ const flash = require("connect-flash");
 const packageJson = require("./package.json");
 const config = require("./config");
 const { knex } = require("./db");
+require('dotenv').config();
+// console.log(process.env);
 
 passport.serializeUser(function (user, done) {
     done(null, user.id);

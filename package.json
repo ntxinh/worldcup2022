@@ -25,6 +25,7 @@
     "csurf": "^1.11.0",
     "datatables.net": "^1.13.1",
     "datatables.net-bs4": "^1.13.1",
+    "dotenv": "^16.0.3",
     "express": "^4.17.1",
     "express-promise-router": "^4.1.0",
     "express-session": "^1.17.2",

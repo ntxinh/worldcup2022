@@ -1,12 +1,14 @@
+require('dotenv').config();
+
 module.exports = {
     development: {
         client: "postgresql",
         connection: {
-            host: process.env.PGHOST || "localhost",
-            port: process.env.PGPORT || 5432,
-            database: "cup2022",
-            user: "cup2022",
-            password: "123456",
+            host: process.env.DB_HOST || "localhost",
+            port: process.env.DB_PORT || 5432,
+            database: process.env.DB_NAME || "cup2022",
+            user: process.env.DB_USER || "cup2022",
+            password: process.env.DB_PASSWORD || "123456",
             application_name: "knex-development",
         },
         migrations: {

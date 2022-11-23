@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
     origin: process.env.ORIGIN || "http://localhost:8080",
     db: {
